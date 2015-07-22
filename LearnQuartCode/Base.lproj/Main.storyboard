@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14F6a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XEi-wM-gQX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Hamburg AniVC-->
+        <scene sceneID="FBh-XL-Wju">
+            <objects>
+                <viewController id="XEi-wM-gQX" customClass="HamburgAniVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RyR-Zd-mWV"/>
+                        <viewControllerLayoutGuide type="bottom" id="5x1-PR-H49"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fs0-cR-mI4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ve-P8-dlb" customClass="HamburgAniView">
+                                <rect key="frame" x="150" y="0.0" width="300" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ptG-XA-xg0"/>
+                                    <constraint firstAttribute="height" constant="480" id="uTc-PV-got"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDO-hQ-1qj">
+                                <rect key="frame" x="260" y="510" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0IO-xd-Knc"/>
+                                    <constraint firstAttribute="height" constant="80" id="VqW-qa-aHh"/>
+                                </constraints>
+                                <state key="normal" title="start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickStart:" destination="XEi-wM-gQX" eventType="touchUpInside" id="N2g-jN-iO8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="1ve-P8-dlb" secondAttribute="centerX" id="DwD-80-jsV"/>
+                            <constraint firstItem="PDO-hQ-1qj" firstAttribute="top" secondItem="1ve-P8-dlb" secondAttribute="bottom" constant="43" id="L8W-hA-Rmh"/>
+                            <constraint firstAttribute="bottom" secondItem="PDO-hQ-1qj" secondAttribute="bottom" constant="10" id="gPw-D6-Tcv"/>
+                            <constraint firstItem="PDO-hQ-1qj" firstAttribute="centerX" secondItem="1ve-P8-dlb" secondAttribute="centerX" id="mHD-fE-Wk9"/>
+                            <constraint firstAttribute="centerY" secondItem="1ve-P8-dlb" secondAttribute="centerY" constant="60" id="ym7-PM-8nb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L8W-hA-Rmh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="hamburgView" destination="1ve-P8-dlb" id="zhp-3a-Lqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4O-E1-QBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="-6"/>
+        </scene>
+    </scenes>
+</document>
