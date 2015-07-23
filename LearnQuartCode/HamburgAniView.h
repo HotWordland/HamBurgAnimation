@@ -11,8 +11,8 @@ IB_DESIGNABLE
 
 @interface HamburgAniView : UIView
 
-- (void)addHamburgAnimationWLAnimation;
-- (void)addHamburgAnimationWLAnimationCompletionBlock:(void (^)(BOOL finished))completionBlock;
+- (void)addAnimationToMoreAnimation;
+- (void)addAnimationToMoreAnimationCompletionBlock:(void (^)(BOOL finished))completionBlock;
 - (void)removeAnimationsForAnimationId:(NSString *)identifier;
 - (void)addAnimationToCancleAnimation;
 - (void)addAnimationToCancleAnimationCompletionBlock:(void (^)(BOOL finished))completionBlock;

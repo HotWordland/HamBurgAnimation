@@ -37,7 +37,7 @@
     }
     isDone = YES;
     [(UIButton *)sender setTitle:@"back" forState:UIControlStateNormal];
-    [_hamburgView addHamburgAnimationWLAnimation];
+    [_hamburgView addAnimationToMoreAnimation];
 
 }
 
